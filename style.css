@@ -1,12 +1,33 @@
+@font-face {
+    font-family: Futura;
+    src: url(fonts/futurak.ttf);
+}
+
+@font-face {
+    font-family: Apercu;
+    src: url(fonts/ApercuMonoProLight.ttf);
+}
+
+@font-face {
+    font-family: Mignon;
+    src: url(fonts/Mignon-Regular.ttf);
+}
+@font-face {
+    font-family: HankenGrotesk;
+    src: url(fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
 body {
     margin: 0px;
 }
 
 :root {
     --color-primary: #ff0808;
-    --color-primary-dark: #000;
+    --color-primary-dark: #000000;
     --color-white: #eee;
-    --color-black: #0f0f0f;
+    --color-grey: #B7B7B7;
+    --color-black: #000000;
+    --color-black-2: #0F0F0F;
 }
 
 header {
@@ -23,10 +44,12 @@ div img {
     margin-left: 200px;
 }
 
-span{
-    display: flex;
-    align-items: center;
+i {
+    display: block;
     background-color: var(--color-white);
+    border-radius: 13px;
+    padding: 3px;
+    margin: 3px;
 }
 
 nav ul li {
@@ -48,7 +71,7 @@ nav ul li {
 
 .btn-1 {
     margin-right: 10px;
-    border: 2px solid var(--color-primary);
+    border: 2px solid var(--color-white);
     margin-left: 50px;
 }
 
@@ -56,3 +79,337 @@ nav ul li {
     background-color: var(--color-primary);
     border: 2px solid transparent;
 }
+
+.Banner {
+    margin: 0px;
+    width: 100%;
+}
+
+.box1 {
+    background-color: var(--color-black);
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    /* Center align the text */
+}
+
+.para1 {
+    font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+    font-weight: 200;
+    font-style: normal;
+    margin: 30px auto 0 auto;
+    padding: 5px 0;
+    color: var(--color-white);
+    display: inline-block;
+}
+
+.SaltnPepper {
+    font-family: "Futura", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.para2 {
+    font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    margin: 10px auto;
+    padding: 5px;
+    color: var(--color-white);
+    display: inline-block;
+}
+
+section ul.image-list {
+    display: flex;
+    justify-content: center;
+    /* Center align items horizontally */
+    gap: 10px;
+    /* Small gap between items */
+    margin: 20px 0;
+    /* Reduced margin */
+    padding: 0;
+    /* Remove padding */
+    list-style: none;
+    /* Remove default list styling */
+}
+
+section ul.image-list li {
+    display: flex;
+    flex-direction: column;
+    /* Stack image and button vertically */
+    align-items: center;
+    /* Center align items horizontally */
+}
+
+section ul.image-list img {
+    background-color: var(--color-white);
+    margin: 10px;
+    /* Reduced margin */
+    padding: 10px;
+    /* Reduced padding */
+    border-radius: 5px;
+}
+
+.ordernow-container {
+    border: 2px solid var(--color-white);
+    border-radius: 50vh;
+    margin-top: 50px;
+    /* Space between image and button */
+}
+
+.ordernow {
+    font-size: 20px;
+    color: var(--color-white);
+    text-decoration: none;
+    text-transform: capitalize;
+    margin: 0px 5px;
+    /* Small margin on the sides */
+    padding: 5px 10px;
+    /* Adjust padding for better appearance */
+}
+
+.btn-3 {
+    display: inline-block;
+    padding: 10px 20px;
+    /* Adjust padding for button appearance */
+    color: var(--color-white);
+    border: none;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* section 2 start */
+
+/* .box2 {
+    background-color: var(--color-black-2);
+    width: 100%;
+    padding: 100px 0;
+    text-align: center;
+} */
+
+.saltnpepper {
+    display: flex;
+    font-family: "Futura", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    padding-top: 80px;
+    padding-left: 70px;
+    margin: 0px;
+    color: var(--color-white);
+}
+
+div h2 {
+    color: var(--color-white);
+    margin: 0; /* Remove default margin */
+    font-size: 48px; /* Adjust font size as needed */
+}
+
+.para3 {
+    font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    margin: 5px 0; /* Reduce vertical margin to decrease space between elements */
+}
+
+
+.box2 {
+    display: flex;
+    background-color: var(--color-black-2);
+    color: var(--color-white);
+    width: 100%;
+    height: auto;
+    position: relative;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items horizontally */
+    padding-bottom: 350px; /* Adjust padding as needed */
+}
+
+.box2 img {
+    position: absolute; /* Position the image absolutely within the container */
+    right: 50px; /* Add some padding from the right edge */
+    top: 35%; /* Center image vertically within the container */
+    transform: translateY(-50%); /* Adjust for exact vertical centering */
+    padding-bottom: 500px;
+    width: 350px;
+    height: auto;
+}
+/* General styles */
+.box3{
+    display: flex-end;
+    text-align: left;
+    list-style: none;
+    padding-bottom: 80px;
+    margin-right: 800px;
+    margin-top: 90px;
+}
+.box3 img{
+    display: flex;
+    margin: 20x 0px 0px 0px;
+    padding-right: 150px;
+    padding-top: 150px;
+    width: 500px;
+    height: auto;
+}
+.box3 small{
+    font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.48em;
+    color: var(--color-primary);
+}
+.box3 span{
+    font-family: "Futura", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 100;
+}
+.box3 h3{
+    font-family:"ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 200;
+}
+.para4{
+    font-family:"ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+.box3 a{
+    text-decoration: none;
+    color: var(--color-white);
+} 
+.getdirection {
+    display: inline-block; /* Ensure the element is block-level for padding and margin */
+    padding: 10px 20px; /* Adjust padding for button appearance */
+    border: 2px solid var(--color-white); /* Add border */
+    border-radius: 20px; /* Optional: rounded corners */
+    margin-bottom: 10px; /* Add space from the bottom if needed */
+    font-size: 16px; /* Adjust font size as needed */
+    color: var(--color-white); /* Ensure text color is white */
+    background-color: transparent; /* Transparent background */
+    transition: background-color 0.3s ease; /* Optional: transition for hover effect */
+}
+.getdirection i{
+    padding-left: 3px;
+}
+/* second part */
+.box4{
+    display: flex-end;
+    text-align: left;
+    margin-left: 650px;
+    padding-bottom: 30px;
+    list-style: none;
+    margin-bottom: 450px;
+}
+.box4 img{
+    /* display: flex; */
+    margin: 30px 0px 0px 250px;
+    padding-right: 800px;
+    padding-top: 850px;
+    width: 500px;
+    height: auto;
+}
+.box4 small{
+    font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.48em;
+    color: var(--color-primary);
+}
+.box4 span{
+    font-family: "Futura", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 100;
+}
+.box4 h3{
+    font-family:"ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 200;
+}
+.para5{
+    font-family:"ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+.box4 a{
+    text-decoration: none;
+    color: var(--color-white);
+} 
+.getdirection {
+    display: inline-block; /* Ensure the element is block-level for padding and margin */
+    padding: 10px 20px; /* Adjust padding for button appearance */
+    border: 2px solid var(--color-white); /* Add border */
+    border-radius: 20px; /* Optional: rounded corners */
+    margin-bottom: 10px; /* Add space from the bottom if needed */
+    font-size: 16px; /* Adjust font size as needed */
+    color: var(--color-white); /* Ensure text color is white */
+    background-color: transparent; /* Transparent background */
+    transition: background-color 0.3s ease; /* Optional: transition for hover effect */
+}
+.getdirection i{
+    padding-left: 3px;
+}
+.box5 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-bottom: -800px;
+    margin-top: 60px;
+    margin-right: 800px;
+    margin-bottom: 60px;
+}
+
+.box5 img {
+    padding-top: 1600px;
+    padding-right: 150px;
+    width: 500px;
+    height: auto;
+}
+
+.box5 small {
+    font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.48em;
+    color: var(--color-primary);
+}
+
+.box5 span {
+    font-family: "Futura", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 100;
+}
+
+.box5 h3 {
+    font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 200;
+}
+
+.para6 {
+    font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.box5 a {
+    text-decoration: none;
+    color: var(--color-white);
+} 
+
+.getdirection {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid var(--color-white);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: var(--color-white);
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.getdirection:hover {
+    background-color: var(--color-white);
+    color: var(--color-black-2);
+}
+
+.getdirection i {
+    padding-left: 3px;
+}
+
