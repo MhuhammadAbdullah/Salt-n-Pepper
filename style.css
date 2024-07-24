@@ -18,173 +18,203 @@
 }
 
 body {
-    margin: 0px;
+    margin: 0%;
+    background: black;
 }
 
 :root {
-    --color-primary: #ff0808;
-    --color-primary-dark: #000000;
-    --color-white: #eee;
-    --color-grey: #B7B7B7;
-    --color-black: #000000;
-    --color-black-2: #0F0F0F;
+    --textcolor1: white;
+    --textcolor2: red;
+    --bgcolor1: red;
+    --bgcolor2: black;
+    --borderradius: 20px;
+    --btnpadding: 12px;
+    --bordercolor: white;
+
+
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 5%;
-    background-color: var(--color-primary-dark);
+.main-div-1 {
+
+
+    header {
+        display: flex;
+        height: 90px;
+        background: black;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+
+    }
+
+    .child1>ul {
+        list-style-type: none;
+        display: flex;
+        gap: 40px;
+
+    }
+
+    .child-li {
+        margin-top: 13px;
+    }
+
+    /* .child1 > button{
+    border-radius: 50%;          didn't worked with this
+} */
+    .btn {
+        border-radius: var(--borderradius);
+        /*assigned a class and then applied border radius */
+        padding: var(--btnpadding);
+        background-color: var(--bgcolor1);
+        color: var(--textcolor1);
+        border-color: var(--bordercolor);
+    }
 }
 
-div img {
-    display: flex;
-    width: 150px;
-    margin-left: 200px;
-}
-
-i {
-    display: block;
-    background-color: var(--color-white);
-    border-radius: 13px;
-    padding: 3px;
-    margin: 3px;
-}
-
-nav ul li {
-    display: inline-flex;
-    list-style: none;
-    color: var(--color-white);
-    margin-right: 30px;
-    font-size: 20px;
-}
-
-.btn {
-    font-size: 20px;
-    color: var(--color-white);
-    text-decoration: none;
-    text-transform: capitalize;
-    padding: 10px 20px;
-    border-radius: 10vh;
-}
-
-.btn-1 {
-    margin-right: 10px;
-    border: 2px solid var(--color-white);
-    margin-left: 50px;
-}
-
-.btn-2 {
-    background-color: var(--color-primary);
-    border: 2px solid transparent;
-}
-
-.Banner {
-    margin: 0px;
-    width: 100%;
-}
-
-.box1 {
-    background-color: var(--color-black);
-    width: 100%;
-    padding: 10px 0;
+.main-div-2 {
+    
+    padding-bottom: 100px;
+    color: var(--textcolor1);
     text-align: center;
-    /* Center align the text */
+    
+
+
+    h2 {
+        font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 100;
+        font-size: 48px;
+        font-style: normal;
+
+    }
+
+    .h2-span {
+        font-family: "Futura", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 400;
+        font-size: 60px;
+
+    }
+    
+    p{
+        font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 16px;
+    }
+    .parent {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 50px;
+    }
+
+    .child {
+        background: white;
+        padding: 10px 10px 10px 10px;
+        border-radius: 10px;
+    }
+
+    .child-div>ul {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        list-style-type: none;
+        gap: 200px;
+    }
+
+    .child-div button {
+        justify-content: center;
+        border-radius: var(--borderradius);
+        background: var(--bgcolor2);
+        color: var(--textcolor1);
+        padding: var(--btnpadding);
+        border-color: var(--bordercolor);
+    }
 }
 
-.para1 {
-    font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 45px;
-    font-weight: 200;
-    font-style: normal;
-    margin: 30px auto 0 auto;
-    padding: 5px 0;
-    color: var(--color-white);
-    display: inline-block;
-}
-
-.SaltnPepper {
-    font-family: "Futura", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 60px;
-    font-weight: 400;
-}
-
-.para2 {
-    font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    margin: 10px auto;
-    padding: 5px;
-    color: var(--color-white);
-    display: inline-block;
-}
-
-section ul.image-list {
-    display: flex;
-    justify-content: center;
-    /* Center align items horizontally */
-    gap: 10px;
-    /* Small gap between items */
-    margin: 20px 0;
-    /* Reduced margin */
-    padding: 0;
-    /* Remove padding */
-    list-style: none;
-    /* Remove default list styling */
-}
-
-section ul.image-list li {
-    display: flex;
-    flex-direction: column;
-    /* Stack image and button vertically */
-    align-items: center;
-    /* Center align items horizontally */
-}
-
-section ul.image-list img {
-    background-color: var(--color-white);
-    margin: 10px;
-    /* Reduced margin */
-    padding: 10px;
-    /* Reduced padding */
-    border-radius: 5px;
-}
-
-.ordernow-container {
-    border: 2px solid var(--color-white);
-    border-radius: 50vh;
-    margin-top: 50px;
-    /* Space between image and button */
-}
-
-.ordernow {
-    font-size: 20px;
-    color: var(--color-white);
-    text-decoration: none;
-    text-transform: capitalize;
-    margin: 0px 5px;
-    /* Small margin on the sides */
-    padding: 5px 10px;
-    /* Adjust padding for better appearance */
-}
-
-.btn-3 {
-    display: inline-block;
-    padding: 10px 20px;
-    /* Adjust padding for button appearance */
-    color: var(--color-white);
-    border: none;
+.main-div-3 {
+    background: rgba(255, 255, 255, 0.06);
+    padding-top: 50px;
     text-align: center;
-    text-decoration: none;
+    color: var(--textcolor1);
+    font-family: butler;
+    h1 {
+        
+        font-family: "Mignon-Bold", Georgia, 'Times New Roman', Times, serif;
+        font-weight: 400;
+        font-size: 60px;
+
+        span {
+            font-family: "Futura", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 400;
+            font-size: 60px;
+        }
+
+    }
+
+    p{
+        font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 16px;
+    }
+
+    .child-of-div-3{
+        text-align: left;
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 100px;
+        margin-left: 200px;
+       
+        .child{
+            
+            width: 43%;
+            height: 250px;
+            margin: 50px 30px 50px 30px;
+
+        }
+        .child h3{
+            font-family: "HankenGrotesk", sans-serif;
+            font-weight: 200;
+            color: var(--textcolor2);
+            letter-spacing: 8px;
+            margin-bottom: 0px;
+            
+        }
+
+        .child h2{
+            font-family: "Futura", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 100;
+            margin-top: 0px;
+            
+          .span-h2{
+            font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 70;
+          }
+
+
+        }
+
+        .child button{
+            color: var(--textcolor1);
+            background: var(--bgcolor2);
+            border-color: var(--bordercolor);
+            border-radius: var(--borderradius);
+            padding: var(--btnpadding);
+        }
+
+        .child .branch-imgs{
+            width: 80%;
+            height: 250px;
+        }
+
+        
+
+ 
+
+  
+    }
+
+  
 }
-
-/* section 2 start */
-.box2{
-    background-color: var(--color-black-2);
-    text-align: center;
-    margin-top: 0px;
-
-}
-
-
