@@ -14,6 +14,11 @@
 }
 
 @font-face {
+    font-family: Butler;
+    src: url(fonts/Butler_Light.ttf);
+}
+
+@font-face {
     font-family: HankenGrotesk;
     src: url(fonts/HankenGrotesk-VariableFont_wght.ttf);
 }
@@ -28,6 +33,7 @@ body {
     --textcolor2: red;
     --bgcolor1: red;
     --bgcolor2: black;
+    --bgcolor5:green;
     --borderradius: 20px;
     --btnpadding: 12px;
     --bordercolor: white;
@@ -73,6 +79,14 @@ body {
         /*assigned a class and then applied border radius */
         padding: var(--btnpadding);
         background-color: var(--bgcolor1);
+        color: var(--textcolor1);
+        border-color: var(--bordercolor);
+    }
+    .btn1 {
+        border-radius: var(--borderradius);
+        /*assigned a class and then applied border radius */
+        padding: var(--btnpadding);
+        background-color: var(--bgcolor2);
         color: var(--textcolor1);
         border-color: var(--bordercolor);
     }
@@ -509,7 +523,7 @@ body {
 
         .child button {
             color: var(--textcolor1);
-            background: var(--bgcolor2);
+            background: var(--bgcolor5);
             border-color: var(--bordercolor);
             border-radius: var(--borderradius);
             padding: var(--btnpadding);
@@ -583,6 +597,7 @@ body {
             font-weight: 100;
         }
     }
+
     .child-of-div-6-1 {
         display: flex;
         text-align: center;
@@ -624,6 +639,7 @@ body {
             font-weight: 100;
         }
     }
+
     .child-of-div-6-2 {
         display: flex;
         text-align: center;
@@ -666,10 +682,150 @@ body {
         }
     }
 }
-.main-div-6 {
-    padding-bottom: 100px;
+
+.main-div-7 {
+    padding-top: 20px;
     color: var(--textcolor1);
     text-align: center;
 
-    
+    h3 {
+        font-family: 'Butler' Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .child-of-div-7 {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 100px;
+        list-style: none;
+
+        .Image {
+            display: flex;
+            width: 287px;
+            height: 287px;
+        }
+    }
+}
+
+.main-div-8 {
+    background: rgba(255, 255, 255, 0.06);
+    padding-top: 20px;
+    padding-bottom: 100px;
+    color: var(--textcolor1);
+
+    .Image {
+        width: 150px;
+        margin-left: 200px;
+        margin-top: 60px;
+    }
+
+    p {
+        font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-left: 200px;
+        font-size: 15px;
+        padding-bottom: 300px;
+
+        a {
+            text-decoration: none;
+            color: var(--textcolor1);
+        }
+    }
+
+    .child-of-div-8 {
+        display: flex;
+        text-align: left;
+        justify-content: center;
+        gap: 30px;
+
+        div ul {
+            margin-top: -580px;
+            margin-right: 300px;
+        }
+
+        div li {
+            list-style: none;
+            font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 14px;
+
+        }
+
+        .li {
+            font-family: 'Butler', Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14px;
+            font-weight: 100;
+        }
+    }
+
+    .child-of-div-8-1 {
+        display: flex;
+        text-align: left;
+        justify-content: center;
+        gap: 30px;
+        list-style: none;
+
+        div ul {
+            margin-top: -580px;
+            margin-left: 300px;
+        }
+
+        div li {
+            list-style: none;
+            font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 14px;
+
+        }
+
+        .li {
+            font-family: 'Butler', Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14px;
+            font-weight: 100;
+        }
+
+        .li-1 {
+            font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 200;
+
+        }
+
+        .main-div-8-2 {
+            display: flex;
+            text-align: left;
+            justify-content: center;
+            gap: 30px;
+            list-style: none;
+
+            .two {
+                
+                margin-left: 50%;
+                padding-top: 10%;
+
+            }
+
+
+            .li-2 {
+                width: 50px;
+            }
+
+            li {
+                display: flex;
+                font-family: 'Butler', Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 16px;
+            }
+        }
+
+
+    }
+
+}
+footer{
+    color: var(--textcolor1);
+    font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    margin-left: 50px;
+    margin-right: 50px;
+
 }
