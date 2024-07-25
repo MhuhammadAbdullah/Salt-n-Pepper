@@ -12,6 +12,7 @@
     font-family: Mignon;
     src: url(fonts/Mignon-Regular.ttf);
 }
+
 @font-face {
     font-family: HankenGrotesk;
     src: url(fonts/HankenGrotesk-VariableFont_wght.ttf);
@@ -30,7 +31,8 @@ body {
     --borderradius: 20px;
     --btnpadding: 12px;
     --bordercolor: white;
-
+    --bgcolor3: #0F0F0F;
+    --bgcolor4: white;
 
 }
 
@@ -77,11 +79,11 @@ body {
 }
 
 .main-div-2 {
-    
+
     padding-bottom: 100px;
     color: var(--textcolor1);
     text-align: center;
-    
+
 
 
     h2 {
@@ -98,11 +100,12 @@ body {
         font-size: 60px;
 
     }
-    
-    p{
+
+    p {
         font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 16px;
     }
+
     .parent {
         display: flex;
         align-content: center;
@@ -141,8 +144,8 @@ body {
     text-align: center;
     color: var(--textcolor1);
     font-family: butler;
+
     h1 {
-        
         font-family: "Mignon-Bold", Georgia, 'Times New Roman', Times, serif;
         font-weight: 400;
         font-size: 60px;
@@ -155,48 +158,51 @@ body {
 
     }
 
-    p{
+    p {
         font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 16px;
     }
 
-    .child-of-div-3{
+    .child-of-div-3 {
         text-align: left;
         display: flex;
         flex-wrap: wrap;
-        margin-right: 100px;
         margin-left: 200px;
-       
-        .child{
-            
+        margin-right: 100px;
+        margin-top: 90px;
+
+        .child {
+
             width: 43%;
             height: 250px;
             margin: 50px 30px 50px 30px;
 
         }
-        .child h3{
+
+
+        .child h3 {
             font-family: "HankenGrotesk", sans-serif;
             font-weight: 200;
             color: var(--textcolor2);
             letter-spacing: 8px;
             margin-bottom: 0px;
-            
+
         }
 
-        .child h2{
+        .child h2 {
             font-family: "Futura", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-weight: 100;
             margin-top: 0px;
-            
-          .span-h2{
-            font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-weight: 70;
-          }
+
+            .span-h2 {
+                font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: 70;
+            }
 
 
         }
 
-        .child button{
+        .child button {
             color: var(--textcolor1);
             background: var(--bgcolor2);
             border-color: var(--bordercolor);
@@ -204,17 +210,466 @@ body {
             padding: var(--btnpadding);
         }
 
-        .child .branch-imgs{
-            width: 80%;
+        .child .branch-imgs {
+            width: 90%;
             height: 250px;
         }
 
-        
+        .child .salt {
+            margin-top: -600px;
+            margin-bottom: -100px;
+            margin-left: 300px;
+            width: 350px;
+            height: 500;
+        }
 
- 
 
-  
+
+
+
+
     }
 
-  
+
+}
+
+.main-div-4 {
+
+    padding-bottom: 100px;
+    color: var(--textcolor1);
+    text-align: center;
+
+    h2 {
+        font-family: "Mignon-Bold", Georgia, 'Times New Roman', Times, serif;
+        font-weight: 400;
+        font-size: 50px;
+
+        .h2-span {
+            font-family: "Futura", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 400;
+            font-size: 50px;
+        }
+
+    }
+
+    .child .branch-imgs {
+        width: 290px;
+        height: 250px;
+    }
+
+    .child-of-div-4 {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 100px;
+        list-style: none;
+
+        h3 {
+            font-family: "HankenGrotesk", sans-serif;
+            font-weight: 100;
+            font-size: 14px;
+            letter-spacing: 5px;
+            color: var(--textcolor2);
+        }
+
+        h2 {
+            font-family: "Futura", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 200;
+            font-size: 20px;
+
+        }
+
+        .span-h2 {
+            font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        span {
+            font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .child button {
+            color: var(--textcolor1);
+            background: var(--bgcolor2);
+            border-color: var(--bordercolor);
+            border-radius: var(--borderradius);
+            padding: var(--btnpadding);
+            margin-top: 25px;
+        }
+    }
+
+    .child-of-div-4-1 {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 100px;
+        list-style: none;
+
+
+        h3 {
+            font-family: "HankenGrotesk", sans-serif;
+            font-weight: 100;
+            font-size: 14px;
+            letter-spacing: 5px;
+            color: var(--textcolor2);
+        }
+
+        h2 {
+            font-family: "Futura", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 200;
+            font-size: 20px;
+
+        }
+
+        .span-h2 {
+            font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        span {
+            font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .child button {
+            color: var(--textcolor1);
+            background: var(--bgcolor2);
+            border-color: var(--bordercolor);
+            border-radius: var(--borderradius);
+            padding: var(--btnpadding);
+            margin-top: 25px;
+        }
+
+        .child .branch-imgs {
+            width: 290px;
+            height: 250px;
+        }
+    }
+
+    .child-of-div-4-2 {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 100px;
+        list-style: none;
+
+
+        h3 {
+            font-family: "HankenGrotesk", sans-serif;
+            font-weight: 100;
+            font-size: 14px;
+            letter-spacing: 5px;
+            color: var(--textcolor2);
+        }
+
+        h2 {
+            font-family: "Futura", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 200;
+            font-size: 20px;
+
+        }
+
+        .span-h2 {
+            font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        span {
+            font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .child button {
+            color: var(--textcolor1);
+            background: var(--bgcolor2);
+            border-color: var(--bordercolor);
+            border-radius: var(--borderradius);
+            padding: var(--btnpadding);
+            margin-top: 25px;
+        }
+
+        .child .branch-imgs {
+            width: 290px;
+            height: 250px;
+        }
+    }
+
+    .child-of-div-4-3 {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 100px;
+        list-style: none;
+
+
+        h3 {
+            font-family: "HankenGrotesk", sans-serif;
+            font-weight: 100;
+            font-size: 14px;
+            letter-spacing: 5px;
+            color: var(--textcolor2);
+        }
+
+        h2 {
+            font-family: "Futura", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 200;
+            font-size: 20px;
+
+        }
+
+        .span-h2 {
+            font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        span {
+            font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .child button {
+            color: var(--textcolor1);
+            background: var(--bgcolor2);
+            border-color: var(--bordercolor);
+            border-radius: var(--borderradius);
+            padding: var(--btnpadding);
+            margin-top: 25px;
+        }
+
+        .child .branch-imgs {
+            width: 290px;
+            height: 250px;
+        }
+    }
+
+
+}
+
+.main-div-5 {
+    background: rgba(255, 255, 255, 0.06);
+    padding-top: 20px;
+    padding-bottom: 130px;
+    text-align: center;
+    color: var(--textcolor1);
+
+    h1 {
+        font-family: "Mignon-Bold", Georgia, 'Times New Roman', Times, serif;
+        font-weight: 400;
+        font-size: 60px;
+
+        span {
+            font-family: "Futura", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 400;
+            font-size: 60px;
+        }
+
+    }
+
+    .child .branch-imgs {
+        display: flex;
+        width: 651px;
+        height: 372px;
+        margin-right: 500px;
+    }
+
+    .child-of-div-5 {
+        text-align: left;
+        flex-wrap: wrap;
+        margin-top: -300px;
+        margin-left: 700px;
+
+
+        h3 {
+            font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 100;
+            font-size: 16px;
+            color: var(--textcolor2);
+            letter-spacing: 5px;
+            margin-bottom: 0px;
+
+        }
+
+        h2 {
+            font-family: "Futura", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 100;
+            margin-top: 0px;
+
+            .span-h2 {
+                font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: 70;
+            }
+
+
+        }
+
+        .child button {
+            color: var(--textcolor1);
+            background: var(--bgcolor2);
+            border-color: var(--bordercolor);
+            border-radius: var(--borderradius);
+            padding: var(--btnpadding);
+        }
+
+
+    }
+}
+
+.main-div-6 {
+    padding-bottom: 100px;
+    color: var(--textcolor1);
+    text-align: center;
+
+    h1 {
+        font-family: "Mignon-Bold", Georgia, 'Times New Roman', Times, serif;
+        font-weight: 400;
+        font-size: 50px;
+
+        span {
+            font-family: "Futura", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 400;
+            font-size: 60px;
+        }
+
+        .two {
+            font-family: "Mignon-Bold", Georgia, 'Times New Roman', Times, serif;
+            font-size: 30px;
+            font-weight: 100;
+        }
+    }
+
+    .child-of-div-6 {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 100px;
+        list-style: none;
+
+        .child {
+            background-color: var(--bgcolor4);
+            color: var(--bgcolor2);
+            height: 250px;
+            width: 400px;
+            padding-top: 20px;
+
+            border-radius: 6px;
+        }
+
+        p {
+            font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 10px;
+            color: var(--textcolor2);
+        }
+
+        .h3-1 {
+            font-family: "Futura", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+        }
+
+        span {
+            font-family: "Futura", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+            font-weight: 100;
+        }
+
+        .h3-2 {
+            font-family: "Futura", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+            font-weight: 100;
+        }
+    }
+    .child-of-div-6-1 {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 100px;
+        list-style: none;
+
+        .child {
+            background-color: var(--bgcolor4);
+            color: var(--bgcolor2);
+            height: 250px;
+            width: 400px;
+            padding-top: 20px;
+
+            border-radius: 6px;
+        }
+
+        p {
+            font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 10px;
+            color: var(--textcolor2);
+        }
+
+        .h3-1 {
+            font-family: "Futura", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+        }
+
+        span {
+            font-family: "Futura", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+            font-weight: 100;
+        }
+
+        .h3-2 {
+            font-family: "Futura", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+            font-weight: 100;
+        }
+    }
+    .child-of-div-6-2 {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 100px;
+        list-style: none;
+
+        .child {
+            background-color: var(--bgcolor4);
+            color: var(--bgcolor2);
+            height: 250px;
+            width: 400px;
+            padding-top: 20px;
+
+            border-radius: 6px;
+        }
+
+        p {
+            font-family: "ApercuMonoProLight", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 10px;
+            color: var(--textcolor2);
+        }
+
+        .h3-1 {
+            font-family: "Futura", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+        }
+
+        span {
+            font-family: "Futura", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+            font-weight: 100;
+        }
+
+        .h3-2 {
+            font-family: "Futura", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+            font-weight: 100;
+        }
+    }
+}
+.main-div-6 {
+    padding-bottom: 100px;
+    color: var(--textcolor1);
+    text-align: center;
+
+    
 }
